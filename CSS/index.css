@@ -20,9 +20,9 @@
   border-radius: 8px;
   background-color: aliceblue;
   color: black;
+  transition: all 0.2s;
 }
 .button:hover {
   background-color: black;
   color: aliceblue;
-  transition: all 0.2s;
 }
