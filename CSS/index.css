@@ -1,3 +1,7 @@
+/*****************/
+/* BUTTON STUFF */
+/*****************/
+
 .button-area {
   background-color: lightblue;
   border: 1px solid black;
@@ -8,9 +12,17 @@
   padding: 20px;
 }
 .button {
+  cursor: pointer;
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 20px;
   padding: 10px 20px;
   border-radius: 8px;
+  background-color: aliceblue;
+  color: black;
+}
+.button:hover {
+  background-color: black;
+  color: aliceblue;
+  transition: all 0.2s;
 }
