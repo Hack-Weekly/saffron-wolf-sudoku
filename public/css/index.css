@@ -1,0 +1,68 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(239, 239, 239);
+}
+/*****************/
+/* GRID STUFF */
+/*****************/
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 306px;
+  border: 1px solid black;
+}
+
+.grid-item {
+  display: grid;
+  grid-template-columns: minmax(10px, 1fr) minmax(10px, 1fr) minmax(10px, 1fr);
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+}
+
+.grid-square {
+  border: 1px solid gray;
+  text-align: center;
+}
+
+.grid-square:hover {
+  background-color: rgb(239, 239, 239);
+}
+
+.grid-square:focus {
+  outline: none;
+  background-color: rgb(225, 225, 225);
+  caret-color: rgb(225, 225, 225);
+}
+
+/*****************/
+/* BUTTON STUFF */
+/*****************/
+
+.button-area {
+  background-color: lightblue;
+  border: 1px solid black;
+  margin: 0 auto;
+  width: 500px;
+  height: auto;
+  text-align: center;
+  padding: 20px;
+}
+.button {
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: aliceblue;
+  color: black;
+  transition: all 0.2s;
+}
+.button:hover {
+  background-color: black;
+  color: aliceblue;
+}
