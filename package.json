@@ -1,0 +1,19 @@
+{
+  "name": "saffron-wolf-sudoku",
+  "version": "1.0.0",
+  "description": "The repo for Team Saffron Wolf's Sudoku Project",
+  "main": "server.js",
+  "scripts": {
+    "testServer": "nodemon server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2"
+  }
+}
