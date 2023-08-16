@@ -3,22 +3,31 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Saffron-Wolf-App</title>
+    <title>Saffron Wolf Sudo Puzzler</title>
     <!-- <link rel="stylesheet" href="css/reset.css" /> -->
     <link rel="stylesheet" href="./index.css" />
     <script src="js/grid.js"></script>
     <!-- Bootstrap's stylesheets -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
-<body>
+<body data-bs-theme="dark">
     <!-- HEADER AREA -->
-    <header></header>
+    <nav data-bs-theme="dark" class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <img src="./images/saffron_wolf.png" alt="team-logo" width="50" height="50" class="p-1">
+          <h2 class="navbar-brand">Saffron Wolf Sudoku Puzzler</h2>
+        </div>
+      </nav>
     <!-- DESCRIPTION AREA -->
-    <p class="description"></p>
+    <div class="container my-4">
+        <div class="card bg-primary-subtle">
+            <div class="card-content text-center p-3">
+                <p>Click on each of the squares to fill them with desired values. Then click on the "SOLVE" button to get the solution to the sudoku puzzle. The app will check for valid inputs as the user enters values into the squares & the square will flash <span style="color: red;">red</span> if value entered isn't allowed as per sudoku rules. If the values entered do not result in a valid or solvable sudoku the app will generate an error stating "no solution found!"</p>
+            </div>
+        </div>
+    </div>
     <!-- GRID AREA -->
-    <div class="screen">
-      <header></header>
-      <!-- <form action="/" method="post"> -->
+    <div class="screen my-4">
       <div class="grid-container">
           <div type="input" class="grid-item">
               <input class="grid-square" id="grid_1.1" oninput="gridInputHandler(this)"></input>
@@ -120,22 +129,12 @@
               <input class="grid-square" id="grid_9.9" oninput="gridInputHandler(this)"></input>
           </div>
       </div>
-    <!-- </form>type="submit" -->
-      <p class="descr"></p>
     </div>
-    <!-- BUTTON AREA -->
-    <section class="button-area">
-      <button class="button" id="submitBtn">Submit</button>
-      <button class="button" id="clearBtn">Clear</button>
-      <button class="button">Get a Hint</button>
-      <p>
-        By pressing "Get a Hint" [INSERTNAMEFORAPP] will try to help you out
-        with what we believe will be the best move possible, without ruining
-        your problem solving experience.
-      </p>
-    </section>
-    <!-- FOOTER AREA -->
-    <footer></footer>
+    <div class="btn-group" role="group" aria-label="Basic outlined example">
+        <button class="btn btn-outline-primary" id="submitBtn">SOLVE</button>
+        <button class="btn btn-outline-primary" id="clearBtn">CLEAR</button>
+        <button class="btn btn-outline-primary">GET A HINT</button>
+    </div>
     <script src="./js/index.js"></script>
     <!-- Bootstrap's JS for animations and functional elements -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
