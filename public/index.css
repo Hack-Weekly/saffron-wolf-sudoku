@@ -1,3 +1,8 @@
+@keyframes fadeInOut {
+  0%,100% { opacity: 0 }
+  50% { opacity: 1 }
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -36,6 +41,13 @@ body {
   outline: none;
   background-color: rgb(225, 225, 225);
   caret-color: rgb(225, 225, 225);
+}
+
+.grid-invalid {
+  border: 1px solid rgb(255, 110, 110);
+  background-color: rgb(255, 110, 110);
+  caret-color: rgb(255, 110, 110);
+  animation: fadeInOut 0.4s linear 1 forwards;
 }
 
 /*****************/
