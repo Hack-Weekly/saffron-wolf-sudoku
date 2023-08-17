@@ -72,7 +72,6 @@ const getSquareArr = (startingRow, startingCol) => {
     let squareArr = [];
     for (let i = startingRow; i < startingRow + 3; i++) {
         for (let j = startingCol; j < startingCol + 3; j++) {
-            console.log(i, j)
             let value = document.getElementById(`grid_${i}.${j}`);
             if (value && value.value !== "") {
                 squareArr.push(value.value);
@@ -85,7 +84,7 @@ const getSquareArr = (startingRow, startingCol) => {
 // Gets row array
 const getRowArr = (row) => {
     let rowArr = [];
-    for (let i = 0; i < 9; i++) {
+    for (let i = 1; i <= 9; i++) {
         let value = document.getElementById(`grid_${row}.${i}`);
         if (value && value.value !== "") {
             rowArr.push(value.value);
@@ -97,7 +96,7 @@ const getRowArr = (row) => {
 // Gets column array
 const getColArr = (col) => {
     let colArr = [];
-    for (let i = 0; i < 9; i++) {
+    for (let i = 1; i <= 9; i++) {
         let value = document.getElementById(`grid_${i}.${col}`);
         if (value && value.value !== "") {
             colArr.push(value.value);

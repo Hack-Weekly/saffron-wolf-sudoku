@@ -1,13 +1,13 @@
 // BUTTON STUFF
 
 // Hint button listener
-// let getHintButton = document.querySelector(".button");
+let getHintButton = document.querySelector(".button");
 
-// getHintButton.addEventListener("click", getHint);
+getHintButton.addEventListener("click", getHint);
 
-// function getHint() {
-//   console.log("This Button Works");
-// }
+function getHint() {
+  console.log("This Button Works");
+}
 
 // Clear board listener
 const clearBtn = document.getElementById("clearBtn");
@@ -40,7 +40,6 @@ submitBtn.addEventListener('click', async () => {
     }
     sudoku.push(row);
   }
-  console.log(sudoku)
 
   const response = await fetch("http://localhost:8080/", {
     method: "POST",
