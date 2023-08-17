@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Saffron Wolf Sudo Puzzler</title>
     <!-- <link rel="stylesheet" href="css/reset.css" /> -->
-    <link rel="stylesheet" href="./index.css" />
+    <link rel="stylesheet" href="./css/index.css" />
     <script src="js/grid.js"></script>
     <!-- Bootstrap's stylesheets -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
@@ -22,7 +22,12 @@
     <div class="container my-4">
         <div class="card bg-primary-subtle">
             <div class="card-content text-center p-3">
-                <p>Click on each of the squares to fill them with desired values. Then click on the "SOLVE" button to get the solution to the sudoku puzzle. The app will check for valid inputs as the user enters values into the squares & the square will flash <span style="color: red;">red</span> if value entered isn't allowed as per sudoku rules. If the values entered do not result in a valid or solvable sudoku the app will generate an error stating "no solution found!"</p>
+                <p>Click on each of the squares to fill them with desired values. Then click on the "SOLVE" button to get the solution to the sudoku puzzle.</p>
+                <ul>
+                    <li class="list-group-item bg-primary-subtle">You can also click on the "CLEAR" button to clear the grid.</li>
+                    <li class="list-group-item bg-primary-subtle">The square will flash <span style="color: red;">red</span> if value entered isn't allowed as per sudoku rules.</li> 
+                    <li class="list-group-item bg-primary-subtle">If the values entered do not result in a valid or solvable sudoku the app will generate an error stating "no solution found!"</li>
+                </ul>
             </div>
         </div>
     </div>

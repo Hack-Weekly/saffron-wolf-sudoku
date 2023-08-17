@@ -53,7 +53,6 @@ submitBtn.addEventListener('click', async () => {
   .catch((error) => {
     console.error("Error:", error);
   });
-  console.log(response.sudoku)
   
   // Displays solution to user
   for (let i = 1; i <= 9; i++) {

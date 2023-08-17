@@ -20,7 +20,7 @@ const gridInputHandler = (square) => {
         return;
     }
 
-    square.style.color = "black";
+    square.style.color = "rgb(173, 173, 173)";
 };
 
 // Checks rows, cols, and squares for duplicates
